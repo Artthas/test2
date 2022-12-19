@@ -9,7 +9,7 @@ const server = http.createServer(app);
 
 app.get(`/`, async (req, res) => {
 	console.log('sdfbsdfbsdb');
-	res.status(HttpCode.OK).json({
+	res.status('200').json({
 		'name': 'alexander',
 		'surname': 'gnetov',
 	});
