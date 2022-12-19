@@ -9,6 +9,10 @@ const server = http.createServer(app);
 
 app.get(`/`, async (req, res) => {
 	console.log('sdfbsdfbsdb');
+	res.status(HttpCode.OK).json({
+		'name': 'alexander',
+		'surname': 'gnetov',
+	});
 });
 
 app.use(express.json());
